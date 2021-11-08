@@ -4,4 +4,8 @@ node() {
         checkout scm 
         setupComminPipelineEnviorment script: this
     }
+    stage('build')
+    {
+        mtaBuild script: this
+    }
 }
