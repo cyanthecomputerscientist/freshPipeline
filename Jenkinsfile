@@ -2,7 +2,7 @@
 node() {
     stage('prepare') {
         checkout scm 
-        setupComminPipelineEnviorment script: this
+        setupCommonPipelineEnvironment script: this
     }
     stage('build')
     {
